@@ -1,0 +1,51 @@
+/* Reset default margin and padding */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the flashcard */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fad142;
+}
+
+.flashcard {
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    position: relative;
+}
+
+.flashcard h1 {
+    font-size: 50px;
+    letter-spacing: .2rem;
+}
+
+.category {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    left: 0px;
+    bottom: 10px;
+    width: 100px;
+    background-color: red;
+}
+
+/* Target devices with a maximum width of 767px (commonly used for smartphones) */
+@media only screen and (max-width: 767px) {
+    /* Your mobile-specific CSS styles go here */
+    /* For example: */
+    .flashcard {
+        width: 95%;
+    }
+    /* Adjust other styles as needed */
+}

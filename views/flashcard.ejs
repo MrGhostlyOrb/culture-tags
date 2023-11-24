@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flashcard Prompt</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+        <div class="flashcard" id="flashcard">
+            <h1><%= prompt %></h1>
+            <p class="category"><%= category %></p>
+        </div>
+        <script>
+            // Get the flashcard and begin button elements
+            const flashcard = document.getElementById('flashcard');
+    
+            // Function to start the game
+            function nextStep() {
+                window.location.href = '/reveal'; // Redirect to the flashcard game
+            }
+    
+            // Event listeners for space bar and touch/click on the flashcard
+            document.addEventListener('keydown', function(event) {
+                if (event.code === 'Space') {
+                    nextStep();
+                }
+            });
+    
+            flashcard.addEventListener('click', nextStep)
+            flashcard.addEventListener('touchstart', nextStep);
+        </script>
+
+
+
+</body>
+</html>
+

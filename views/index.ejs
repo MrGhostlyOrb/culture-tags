@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flashcard Prompt</title>
+    <link rel="stylesheet" href="/styles.css">
+    <!-- Include necessary styles -->
+
+    <!-- Your existing font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="flashcard" id="flashcard">
+        <h1># Culture Tags</h1>
+        <p>Click to begin</p>
+    </div>
+
+    <script>
+        // Get the flashcard and begin button elements
+        const flashcard = document.getElementById('flashcard');
+
+        // Function to start the game
+        function startGame() {
+            window.location.href = '/flashcard'; // Redirect to the flashcard game
+        }
+
+        // Event listeners for space bar and touch/click on the flashcard
+        document.addEventListener('keydown', function(event) {
+            if (event.code === 'Space') {
+                startGame();
+            }
+        });
+
+        flashcard.addEventListener('click', startGame)
+        flashcard.addEventListener('touchstart', startGame);
+    </script>
+</body>
+</html>
