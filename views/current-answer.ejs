@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Culture Tags</title>
     <link rel="stylesheet" href="/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
+
 <body>
     <div class="flashcard">
-    <h1><%= answer %></h1>
-    <script>
-        setInterval(()=>{location.reload();}, 1000)
-    </script>
-</div>
+        <h1>
+            <%= answer %>
+        </h1>
+        <script>
+            setInterval(() => { location.reload(); }, 1000)
+        </script>
+    </div>
 
 </body>
-</html>
 
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Culture Tags</title>
@@ -12,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
+
 <body>
 
     <div class="flashcard" id="flashcard">
@@ -29,7 +31,7 @@
         }
 
         // Event listeners for space bar and touch/click on the flashcard
-        document.addEventListener('keydown', function(event) {
+        document.addEventListener('keydown', function (event) {
             if (event.code === 'Space') {
                 startGame();
             }
@@ -39,4 +41,5 @@
         flashcard.addEventListener('touchstart', startGame);
     </script>
 </body>
+
 </html>
