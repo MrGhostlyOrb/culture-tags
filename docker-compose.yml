@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  web:
+    container_name: culture-tags
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    networks:
+      - nginxproxymanager
+    pull_policy: build
+networks:
+  nginxproxymanager:
+    external: true
